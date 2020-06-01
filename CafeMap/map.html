@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" type="text/css" href="map.css">
+	<title>지도!</title>
+</head>
+<body>
+	<div id="map"></div>
+	<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=5f153b84f80fa945db9bdf11c9747b2d"></script>
+	<script>
+		var mapContainer = document.getElementById('map'), // 지도 표시 
+	    mapOption = { 
+	        center: new kakao.maps.LatLng(37.301230, 126.840167), // 지도의 중심좌표
+	        level: 3
+	    };
+
+		var map = new kakao.maps.Map(mapContainer, mapOption); // 지도 생성
+
+		// 지도 타입 전환 컨트롤 (일반 / 스카이뷰)
+		var mapTypeControl = new kakao.maps.MapTypeControl();
+
+		map.addControl(mapTypeControl, kakao.maps.ControlPosition.TOPRIGHT);
+
+		// 지도 확대,축소 컨트롤
+		var zoomControl = new kakao.maps.ZoomControl();
+		map.addControl(zoomControl, kakao.maps.ControlPosition.RIGHT);
+
+		//=================================================================================================
+
+		// 마커 위치 
+		var positions = [
+		    {
+		        title: '<div class="title">스타벅스</div>', 
+		        latlng: new kakao.maps.LatLng(37.300862, 126.838150),
+		        // content: content = '<div class="customoverlay">' +
+    						// 	'  <a href="https://map.kakao.com/link/map/11394059" target="_blank">' +
+							   //  '    <span class="title">스타벅스</span>' +
+							   //  '  </a>' +
+							   //  '</div>'
+		    },
+		    {
+		        title: '<div class="title">워터킹커피로스터스</div>', 
+		        latlng: new kakao.maps.LatLng(37.299379, 126.838482),
+		        content: ''
+		    },
+		    {
+		        title: '<div class="title">토프레소</div>', 
+		        latlng: new kakao.maps.LatLng(37.299574, 126.838555),
+		        content: ''
+		    },
+		    {
+		        title: '<div class="title">시저커피</div>',
+		        latlng: new kakao.maps.LatLng(37.299794, 126.839081),
+		        content: ''
+		    }
+		];
+
+		// 마커 이미지
+		var imageSrc = "https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/markerStar.png"; 
+		    
+		for (var i = 0; i < positions.length; i ++) {
+
+		    var marker = new kakao.maps.Marker({
+		        map: map, // 마커를 표시할 지도
+		        position: positions[i].latlng // 마커의 위치
+		    });
+
+		    // 윈포인도우 
+		    var infowindow = new kakao.maps.InfoWindow({
+		        content: positions[i].title // 인포윈도우에 표시할 내용
+		    });
+
+		    kakao.maps.event.addListener(marker, 'mouseover', makeOverListener(map, marker, infowindow));
+		    kakao.maps.event.addListener(marker, 'mouseout', makeOutListener(infowindow));
+
+		}
+
+		// 인포윈도우 열기
+		function makeOverListener(map, marker, infowindow) {
+		    return function() {
+		        infowindow.open(map, marker);
+		    };
+		}
+
+		// 인포윈도우 닫기
+		function makeOutListener(infowindow) {
+		    return function() {
+		        infowindow.close();
+		    };
+		}
+
+	</script>
+</body>
+</html>
