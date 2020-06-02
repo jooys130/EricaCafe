@@ -15,7 +15,7 @@
       <div id="intro">
          <h1>Cafe Finder<br />
             around ERICA</h1>
-         <p>학교 주변 카페 <b>위치</b>와 <b>가격</b> 간편하게 알아보기</p>
+         <p>학교 주변 카페 <b>위치</b>와 <b>정보</b> 간편하게 알아보기</p>
       </div>
 
       <!-- Header -->
@@ -42,8 +42,97 @@
                <h3>around ERICA</h3>
                <p>성준은유연하조</p>
             </header>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3173.9242122905534!2d126.83208981426453!3d37.29692997984922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b6ef2f5a7cb73%3A0x26b59cb3d9af4a46!2z7ZWc7JaR64yA7ZWZ6rWQIEVSSUNB7Lqg7Y287Iqk!5e0!3m2!1sko!2skr!4v1590995568410!5m2!1sko!2skr"
-                  width="400" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+            <div id="map"></div>
+			<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=5f153b84f80fa945db9bdf11c9747b2d"></script>
+			<script>
+				var mapContainer = document.getElementById('map'), // 지도 표시 
+			    mapOption = { 
+			        center: new kakao.maps.LatLng(37.301230, 126.840167), // 지도의 중심좌표
+			        level: 3
+			    };
+
+				var map = new kakao.maps.Map(mapContainer, mapOption); // 지도 생성
+
+				// 지도 타입 전환 컨트롤 (일반 / 스카이뷰)
+				var mapTypeControl = new kakao.maps.MapTypeControl();
+
+				map.addControl(mapTypeControl, kakao.maps.ControlPosition.TOPRIGHT);
+
+				// 지도 확대,축소 컨트롤
+				var zoomControl = new kakao.maps.ZoomControl();
+				map.addControl(zoomControl, kakao.maps.ControlPosition.RIGHT);
+
+				//=================================================================================================
+
+				// 마커 위치 
+				var positions = [
+				    {
+				        title: '<div class="title">스타벅스</div>', 
+				        latlng: new kakao.maps.LatLng(37.300862, 126.838150),
+				        // content: content = '<div class="customoverlay">' +
+		    						// 	'  <a href="https://map.kakao.com/link/map/11394059" target="_blank">' +
+									   //  '    <span class="title">스타벅스</span>' +
+									   //  '  </a>' +
+									   //  '</div>'
+				    },
+				    {
+				        title: '<div class="title">워터킹커피로스터스</div>', 
+				        latlng: new kakao.maps.LatLng(37.299379, 126.838482),
+				        content: ''
+				    },
+				    {
+				        title: '<div class="title">토프레소</div>', 
+				        latlng: new kakao.maps.LatLng(37.299574, 126.838555),
+				        content: ''
+				    },
+				    {
+				        title: '<div class="title">시저커피</div>',
+				        latlng: new kakao.maps.LatLng(37.299794, 126.839081),
+				        content: ''
+				    }
+				];
+
+				// 마커 이미지
+				var imageSrc = "https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/markerStar.png"; 
+				    
+				for (var i = 0; i < positions.length; i ++) {
+
+				    var marker = new kakao.maps.Marker({
+				        map: map, // 마커를 표시할 지도
+				        position: positions[i].latlng // 마커의 위치
+				    });
+
+				    // 윈포인도우 
+				    var infowindow = new kakao.maps.InfoWindow({
+				        content: positions[i].title // 인포윈도우에 표시할 내용
+				    });
+
+				    kakao.maps.event.addListener(marker, 'mouseover', makeOverListener(map, marker, infowindow));
+				    kakao.maps.event.addListener(marker, 'mouseout', makeOutListener(infowindow));
+
+				}
+
+				// 인포윈도우 열기
+				function makeOverListener(map, marker, infowindow) {
+				    return function() {
+				        infowindow.open(map, marker);
+				    };
+				}
+
+				// 인포윈도우 닫기
+				function makeOutListener(infowindow) {
+				    return function() {
+				        infowindow.close();
+				    };
+				}
+
+			</script>
+
+
+            <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3173.9242122905534!2d126.83208981426453!3d37.29692997984922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b6ef2f5a7cb73%3A0x26b59cb3d9af4a46!2z7ZWc7JaR64yA7ZWZ6rWQIEVSSUNB7Lqg7Y287Iqk!5e0!3m2!1sko!2skr!4v1590995568410!5m2!1sko!2skr"
+                  width="400" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> -->
+
 
          </section>
       </div>
