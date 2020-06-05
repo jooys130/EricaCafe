@@ -1,4 +1,7 @@
 <!DOCTYPE HTML>
+
+<?php session_start(); ?>
+
 <html>
 	<head>
 		<title>HELLO!</title>
@@ -14,13 +17,25 @@
 
 				<!-- Intro -->
 					<div id="intro">
+                        
 						<nav class="navbar navbar-inverse navbar-fixed-top">
-							<ul class="actions small">
-								<li><a href="login.html" class="button special small">LOGIN</a></li>
-								<li><a href="signup.html" class="button small">SIGN UP</a></li>
-							</ul>
-							
-						</nav>
+                            <ul class="actions small">
+
+                                <!-- php -->
+                                <?php 
+                                if(!isset($_SESSION['user_name'])){
+                                    echo '<li><a href="login.html" class="button special small">LOGIN</a></li>';
+                                    echo '<li><a href="signUp.php" class="button small">SIGN UP</a></li>';
+                                } 
+                                else{
+                                    $user_name = $_SESSION['user_name'];
+                                    echo "<p><strong>$user_name</strong>님 환영합니다.";
+                                    echo '<li><a href="logOut.php" class="button special small">LOGOUT</a></li>';
+                                }?>
+                    
+							</ul>	
+                        </nav>
+                                      
 						<h1>Cafe Finder<br/>
 						around ERICA</h1>
 						<p>학교 주변 카페 <b>위치</b>와 <b>정보</b> 간편하게 알아보기</p>
@@ -28,7 +43,7 @@
 
 				<!-- Header -->
 					<header id="header">
-						<a href="index.html" class="logo">Cafe Finder</a>
+						<a href="index.php" class="logo">Cafe Finder</a>
 					</header>
 
 				<!-- Nav -->
