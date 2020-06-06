@@ -36,7 +36,10 @@
         $str = "INSERT INTO user_info (memberSeq, id, pwd, uname, birthDay) 
                 VALUE (NULL, $q_id, $q_password, $q_name, $q_birthDay)";
         $db->exec($str);
+
+        $_SESSION['signUpOk'] = "yes";
         header("Location: index.php");
+        exit;
 
     } catch (PDOException $ex) {
         ?>

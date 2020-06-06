@@ -22,7 +22,12 @@
                             <ul class="actions small">
 
                                 <!-- php -->
-                                <?php 
+								<?php
+								if($_SESSION['signUpOk'] == "yes"){
+									$_SESSION['signUpOk'] = "no";
+									echo "<script>alert('회원가입이 완료되었습니다.');</script>";
+								}
+							
                                 if(!isset($_SESSION['user_name'])){
                                     echo '<li><a href="login.html" class="button special small">LOGIN</a></li>';
                                     echo '<li><a href="signUp.php" class="button small">SIGN UP</a></li>';
