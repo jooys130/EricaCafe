@@ -6,6 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
       <link rel="stylesheet" href="assets/css/main.css" />
       <link rel="stylesheet" href="assets/css/map.css" />
+      <link rel="stylesheet" href="assets/css/search.css" />
       <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
    </head>
    <body class="is-loading">
@@ -256,8 +257,186 @@
 				    };
 				}
 
-				   
+				 
 			</script>
+
+			<script type="text/javascript">
+		      	function filter(){
+
+			        var value, name, item, i;
+
+			        value = document.getElementById("value").value.toUpperCase();
+			        item = document.getElementsByClassName("item");
+
+			        for(i=0;i<item.length;i++){
+			        	name = item[i].getElementsByClassName("name");
+			     		if(name[0].innerHTML.toUpperCase().indexOf(value) > -1) {
+			            	item[i].style.display = "flex";
+			          	} else {
+			            	item[i].style.display = "none";
+			          	}
+			        }
+		      	}
+		  	</script>
+
+
+			<div class="searchbox">
+		    	<div class="header">
+		        <h1>Search</h1>
+		        <input onkeyup="filter()" type="text" id="value" placeholder="Type to Search">
+		   		</div>
+
+		   		<div class="container">
+
+		   			<a href="cafe_list/cafe_4.html">
+					   	<div class="item">
+					      	<span class="icon">A</span>
+					      	<span class="name">아마스빈</span>
+					    </div>
+					</a>
+
+					<a href="cafe_list/cafe_19.html">
+					   	<div class="item">
+					      	<span class="icon">C</span>
+					      	<span class="name">카페카르와</span>
+					    </div>
+				    </a>
+
+				    <a href="cafe_list/cafe_17.html">
+					  	<div class="item">
+					   		<span class="icon">C</span>
+					     	<span class="name">크레바스</span>
+					    </div>
+				    </a>
+
+				    <a href="cafe_list/cafe_0.html">
+					   	<div class="item">
+					      	<span class="icon">D</span>
+					      	<span class="name">카페드림</span>
+					    </div>
+				    </a>
+
+				    <a href="cafe_list/cafe_0.html">
+					   	<div class="item">
+					      	<span class="icon">E</span>
+					      	<span class="name">이디야커피</span>
+					    </div>
+				    </a>
+
+				    <a href="cafe_list/cafe_0.html">
+					    <div class="item">
+					      	<span class="icon">F</span>
+					      	<span class="name">커피플랜트</span>
+					    </div>
+				    </a>
+
+				    <a href="cafe_list/cafe_0.html">
+					   	<div class="item">
+					      	<span class="icon">J</span>
+					      	<span class="name">쥬씨</span>
+					    </div>
+				    </a>
+
+				    <a href="cafe_list/cafe_0.html">
+					   	<div class="item">
+					      	<span class="icon">L</span>
+					      	<span class="name">룽고커피</span>
+					    </div>
+				    </a>
+
+				    <a href="cafe_list/cafe_0.html">
+					   	<div class="item">
+					      	<span class="icon">M</span>
+					      	<span class="name">카페마루</span>
+					    </div>
+				    </a>
+
+				    <a href="cafe_list/cafe_0.html">
+					   	<div class="item">
+					      	<span class="icon">M</span>
+					      	<span class="name">모모커피</span>
+					    </div>
+				    </a>
+
+				    <a href="cafe_list/cafe_0.html">
+					   	<div class="item">
+					      	<span class="icon">N</span>
+					      	<span class="name">카페내향적</span>
+					    </div>
+				   	</a>
+
+				    <a href="cafe_list/cafe_0.html">
+					   	<div class="item">
+					      	<span class="icon">N</span>
+					      	<span class="name">카페누엘</span>
+					    </div>
+				    </a>
+
+				    <a href="cafe_list/cafe_0.html">
+					   	<div class="item">
+					      	<span class="icon">S</span>
+					      	<span class="name">스타벅스</span>
+					    </div>
+				    </a>
+
+				    <a href="cafe_list/cafe_0.html">
+					   	<div class="item">
+					      	<span class="icon">S</span>
+					      	<span class="name">시저커피</span>
+					    </div>
+					</a>
+
+				    <a href="cafe_list/cafe_0.html">
+					    <div class="item">
+						    <span class="icon">T</span>
+						    <span class="name">타르트블라썸</span>
+					    </div>
+					</a>
+
+					<a href="cafe_list/cafe_0.html">
+					    <div class="item">
+					      	<span class="icon">T</span>
+					      	<span class="name">토프레소</span>
+					    </div>
+					</a>
+
+					<a href="cafe_list/cafe_0.html">
+					    <div class="item">
+					      	<span class="icon">T</span>
+					      	<span class="name">투썸플레이스</span>
+					    </div>
+					</a>
+
+					<a href="cafe_list/cafe_0.html">
+					   	<div class="item">
+					      	<span class="icon">U</span>
+					      	<span class="name">우리동네커피공장카페</span>
+					    </div>
+					</a>
+
+					<a href="cafe_list/cafe_0.html">
+					   	<div class="item">
+					      	<span class="icon">W</span>
+					      	<span class="name">워터킹커피로스터스</span>
+					    </div>
+					</a>
+
+					<a href="cafe_list/cafe_0.html">
+					   	<div class="item">
+					      	<span class="icon">W</span>
+					      	<span class="name">카페윈드밀</span>
+					    </div>
+					</a>
+
+					<a href="cafe_list/cafe_0.html">
+					   	<div class="item">
+					      	<span class="icon">Y</span>
+					      	<span class="name">요거프레소</span>
+					    </div>
+					</a>
+			  	</div>
+		    </div>
+
 
          </section>
       </div>
