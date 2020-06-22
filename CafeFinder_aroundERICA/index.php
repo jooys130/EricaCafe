@@ -57,7 +57,7 @@
 						<ul class="links">
 							<li class="active"><a href="cafe.php">CAFE</a></li>
 							<li><a href="intro.html">INTRODUCE</a></li>
-				                	<li><a href="bookmark.html">BOOKMARK</a></li>
+				                	<li><a href="bookmark.php">BOOKMARK</a></li>
 
                                         	</ul>
 					</nav>
