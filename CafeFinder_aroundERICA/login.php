@@ -13,6 +13,7 @@
         	if($result[$i]["id"] == $ID and $result[$i]["pwd"] == $PW){
                 session_start();
                 $_SESSION['user_name'] = $result[$i]["uname"];
+                $_SESSION['user_id'] = $result[$i]["id"];
                 header("Location: index.php");
                 exit;
         	}
