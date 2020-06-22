@@ -74,19 +74,6 @@
 
 						</div>
 
-						<div class="menu_info">
-						  	<h2 style="font-size: 35px;">Menu</h2>
-
-						  	
-
-
-
-											₩
-
-
-
-						</div>
-
 					</section>
 
 				</div>

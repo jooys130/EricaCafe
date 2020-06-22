@@ -77,13 +77,27 @@
 						<div class="menu_info">
 						  	<h2 style="font-size: 35px;">Menu</h2>
 
+						  	<ul>
+						  		<li>
+						  			<strong>복숭아 아이스티</strong>
+						  		</li>
+						  		<li>
+						  			<strong>딸기바나나</strong>
+						  		</li>
+						  		<li>
+						  			<strong>아메리카노</strong>
+						  		</li>
+						  		<li>
+						  			<strong>오렌지</strong>
+						  		</li>
+						  		<li>
+						  			<strong>초코바나나</strong>
+						  		</li>
+						  		<li>
+						  			<strong>수박오리지널</strong>
+						  		</li>
+						  	</ul>
 						  	
-
-
-
-											₩
-
-
 
 						</div>
 

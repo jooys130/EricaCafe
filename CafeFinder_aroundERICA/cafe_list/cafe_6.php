@@ -77,13 +77,9 @@
 						<div class="menu_info">
 						  	<h2 style="font-size: 35px;">Menu</h2>
 
-						  	
-
-
-
-											₩
-
-
+						 	<div style="margin-left: 20px;">
+						  		<a href="image/6.png"><strong>Detail menu ▶</strong></a>	
+						  	</div>
 
 						</div>
 
