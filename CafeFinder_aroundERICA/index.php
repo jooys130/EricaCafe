@@ -33,7 +33,8 @@
                                     echo '<li><a href="signUp.php" class="button small">SIGN UP</a></li>';
                                 } 
                                 else{
-                                    $user_name = $_SESSION['user_name'];
+									$user_name = $_SESSION['user_name'];
+									$user_id = $_SESSION['user_id'];
                                     echo "<p><strong>$user_name</strong>님 환영합니다.";
                                     echo '<li><a href="logOut.php" class="button special small">LOGOUT</a></li>';
                                 }?>
@@ -54,7 +55,7 @@
 				<!-- Nav -->
 					<nav id="nav">
 						<ul class="links">
-							<li class="active"><a href="cafe.html">CAFE</a></li>
+							<li class="active"><a href="cafe.php">CAFE</a></li>
 							<li><a href="intro.html">INTRODUCE</a></li>
 						</ul>
 					</nav>
