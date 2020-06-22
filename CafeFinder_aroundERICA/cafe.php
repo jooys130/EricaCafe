@@ -202,67 +202,67 @@
 				    // 마커에 클릭이벤트 등록
 				    if(i==0){
 				        kakao.maps.event.addListener(marker, 'click', function() {
-				            location.href="cafe_list/cafe_0.html";});
+				            location.href="cafe_list/cafe_0.php";});
 				    }else if(i==1){
 				        kakao.maps.event.addListener(marker, 'click', function() {
-				            location.href="cafe_list/cafe_1.html";});
+				            location.href="cafe_list/cafe_1.php";});
 				    }else if(i==2){
 				        kakao.maps.event.addListener(marker, 'click', function() {
-				            location.href="cafe_list/cafe_2.html";});
+				            location.href="cafe_list/cafe_2.php";});
 				    }else if(i==3){
 				        kakao.maps.event.addListener(marker, 'click', function() {
-				            location.href="cafe_list/cafe_3.html";});
+				            location.href="cafe_list/cafe_3.php";});
 				    }else if(i==4){
 				        kakao.maps.event.addListener(marker, 'click', function() {
-				            location.href="cafe_list/cafe_4.html";});
+				            location.href="cafe_list/cafe_4.php";});
 				    }else if(i==5){
 				        kakao.maps.event.addListener(marker, 'click', function() {
-				            location.href="cafe_list/cafe_5.html";});
+				            location.href="cafe_list/cafe_5.php";});
 				    }else if(i==6){
 				        kakao.maps.event.addListener(marker, 'click', function() {
-				            location.href="cafe_list/cafe_6.html";});
+				            location.href="cafe_list/cafe_6.php";});
 				  	}else if(i==7){
 				        kakao.maps.event.addListener(marker, 'click', function() {
-				            location.href="cafe_list/cafe_7.html";});
+				            location.href="cafe_list/cafe_7.php";});
 				    }else if(i==8){
 				        kakao.maps.event.addListener(marker, 'click', function() {
-				            location.href="cafe_list/cafe_8.html";});
+				            location.href="cafe_list/cafe_8.php";});
 				    }else if(i==9){
 				        kakao.maps.event.addListener(marker, 'click', function() {
-				            location.href="cafe_list/cafe_9.html";});
+				            location.href="cafe_list/cafe_9.php";});
 				    }else if(i==10){
 				        kakao.maps.event.addListener(marker, 'click', function() {
-				            location.href="cafe_list/cafe_10.html";});
+				            location.href="cafe_list/cafe_10.php";});
 				    }else if(i==11){
 				        kakao.maps.event.addListener(marker, 'click', function() {
-				            location.href="cafe_list/cafe_11.html";});
+				            location.href="cafe_list/cafe_11.php";});
 				    }else if(i==12){
 				        kakao.maps.event.addListener(marker, 'click', function() {
-				            location.href="cafe_list/cafe_12.html";});
+				            location.href="cafe_list/cafe_12.php";});
 				   	}else if(i==13){
 				        kakao.maps.event.addListener(marker, 'click', function() {
-				            location.href="cafe_list/cafe_13.html";});
+				            location.href="cafe_list/cafe_13.php";});
 				    }else if(i==14){
 				        kakao.maps.event.addListener(marker, 'click', function() {
-				            location.href="cafe_list/cafe_14.html";});
+				            location.href="cafe_list/cafe_14.php";});
 				    }else if(i==15){
 				        kakao.maps.event.addListener(marker, 'click', function() {
-				            location.href="cafe_list/cafe_15.html";});
+				            location.href="cafe_list/cafe_15.php";});
 				    }else if(i==16){
 				        kakao.maps.event.addListener(marker, 'click', function() {
-				            location.href="cafe_list/cafe_16.html";});
+				            location.href="cafe_list/cafe_16.php";});
 				    }else if(i==17){
 				        kakao.maps.event.addListener(marker, 'click', function() {
-				            location.href="cafe_list/cafe_17.html";});
+				            location.href="cafe_list/cafe_17.php";});
 				    }else if(i==18){
 				        kakao.maps.event.addListener(marker, 'click', function() {
-				            location.href="cafe_list/cafe_18.html";});
+				            location.href="cafe_list/cafe_18.php";});
 				  	}else if(i==19){
 				        kakao.maps.event.addListener(marker, 'click', function() {
-				            location.href="cafe_list/cafe_19.html";});
+				            location.href="cafe_list/cafe_19.php";});
 				    }else if(i==20){
 				        kakao.maps.event.addListener(marker, 'click', function() {
-				            location.href="cafe_list/cafe_20.html";});
+				            location.href="cafe_list/cafe_20.php";});
 				    }
 				    
 				    // 마커에 mouseover 이벤트와 mouseout 이벤트를 등록
@@ -315,147 +315,147 @@
 
 		   		<div class="container">
 
-		   			<a href="cafe_list/cafe_4.html">
+		   			<a href="cafe_list/cafe_4.php">
 					   	<div class="item">
 					      	<span class="icon">A</span>
 					      	<span class="name">아마스빈</span>
 					    </div>
 					</a>
 
-					<a href="cafe_list/cafe_19.html">
+					<a href="cafe_list/cafe_19.php">
 					   	<div class="item">
 					      	<span class="icon">C</span>
 					      	<span class="name">카페카르와</span>
 					    </div>
 				    </a>
 
-				    <a href="cafe_list/cafe_17.html">
+				    <a href="cafe_list/cafe_17.php">
 					  	<div class="item">
 					   		<span class="icon">C</span>
 					     	<span class="name">크레바스</span>
 					    </div>
 				    </a>
 
-				    <a href="cafe_list/cafe_20.html">
+				    <a href="cafe_list/cafe_20.php">
 					   	<div class="item">
 					      	<span class="icon">D</span>
 					      	<span class="name">카페드림</span>
 					    </div>
 				    </a>
 
-				    <a href="cafe_list/cafe_10.html">
+				    <a href="cafe_list/cafe_10.php">
 					   	<div class="item">
 					      	<span class="icon">E</span>
 					      	<span class="name">이디야커피</span>
 					    </div>
 				    </a>
 
-				    <a href="cafe_list/cafe_12.html">
+				    <a href="cafe_list/cafe_12.php">
 					    <div class="item">
 					      	<span class="icon">F</span>
 					      	<span class="name">커피플랜트</span>
 					    </div>
 				    </a>
 
-				    <a href="cafe_list/cafe_7.html">
+				    <a href="cafe_list/cafe_7.php">
 					   	<div class="item">
 					      	<span class="icon">J</span>
 					      	<span class="name">쥬씨</span>
 					    </div>
 				    </a>
 
-				    <a href="cafe_list/cafe_13.html">
+				    <a href="cafe_list/cafe_13.php">
 					   	<div class="item">
 					      	<span class="icon">L</span>
 					      	<span class="name">룽고커피</span>
 					    </div>
 				    </a>
 
-				    <a href="cafe_list/cafe_9.html">
+				    <a href="cafe_list/cafe_9.php">
 					   	<div class="item">
 					      	<span class="icon">M</span>
 					      	<span class="name">카페마루</span>
 					    </div>
 				    </a>
 
-				    <a href="cafe_list/cafe_6.html">
+				    <a href="cafe_list/cafe_6.php">
 					   	<div class="item">
 					      	<span class="icon">M</span>
 					      	<span class="name">모모커피</span>
 					    </div>
 				    </a>
 
-				    <a href="cafe_list/cafe_16.html">
+				    <a href="cafe_list/cafe_16.php">
 					   	<div class="item">
 					      	<span class="icon">N</span>
 					      	<span class="name">카페내향적</span>
 					    </div>
 				   	</a>
 
-				    <a href="cafe_list/cafe_11.html">
+				    <a href="cafe_list/cafe_11.php">
 					   	<div class="item">
 					      	<span class="icon">N</span>
 					      	<span class="name">카페누엘</span>
 					    </div>
 				    </a>
 
-				    <a href="cafe_list/cafe_0.html">
+				    <a href="cafe_list/cafe_0.php">
 					   	<div class="item">
 					      	<span class="icon">S</span>
 					      	<span class="name">스타벅스</span>
 					    </div>
 				    </a>
 
-				    <a href="cafe_list/cafe_3.html">
+				    <a href="cafe_list/cafe_3.php">
 					   	<div class="item">
 					      	<span class="icon">S</span>
 					      	<span class="name">시저커피</span>
 					    </div>
 					</a>
 
-				    <a href="cafe_list/cafe_15.html">
+				    <a href="cafe_list/cafe_15.php">
 					    <div class="item">
 						    <span class="icon">T</span>
 						    <span class="name">타르트블라썸</span>
 					    </div>
 					</a>
 
-					<a href="cafe_list/cafe_2.html">
+					<a href="cafe_list/cafe_2.php">
 					    <div class="item">
 					      	<span class="icon">T</span>
 					      	<span class="name">토프레소</span>
 					    </div>
 					</a>
 
-					<a href="cafe_list/cafe_18.html">
+					<a href="cafe_list/cafe_18.php">
 					    <div class="item">
 					      	<span class="icon">T</span>
 					      	<span class="name">투썸플레이스</span>
 					    </div>
 					</a>
 
-					<a href="cafe_list/cafe_14.html">
+					<a href="cafe_list/cafe_14.php">
 					   	<div class="item">
 					      	<span class="icon">U</span>
 					      	<span class="name">우리동네커피공장카페</span>
 					    </div>
 					</a>
 
-					<a href="cafe_list/cafe_1.html">
+					<a href="cafe_list/cafe_1.php">
 					   	<div class="item">
 					      	<span class="icon">W</span>
 					      	<span class="name">워터킹커피로스터스</span>
 					    </div>
 					</a>
 
-					<a href="cafe_list/cafe_5.html">
+					<a href="cafe_list/cafe_5.php">
 					   	<div class="item">
 					      	<span class="icon">W</span>
 					      	<span class="name">카페윈드밀</span>
 					    </div>
 					</a>
 
-					<a href="cafe_list/cafe_8.html">
+					<a href="cafe_list/cafe_8.php">
 					   	<div class="item">
 					      	<span class="icon">Y</span>
 					      	<span class="name">요거프레소</span>
