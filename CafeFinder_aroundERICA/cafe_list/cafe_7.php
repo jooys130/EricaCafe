@@ -1,4 +1,5 @@
 <!DOCTYPE HTML>
+<?php session_start(); ?>
 <html>
 	<head>
 		<title>쥬씨 | EricaCafe</title>
@@ -14,13 +15,39 @@
 			<div id="wrapper" class="fade-in">
 
 					<header id="header" style="padding-bottom: 50px;">
-						<a href="../cafe.html" class="logo">Cafe Finder</a>
+						<a href="../cafe.php" class="logo">Cafe Finder</a>
 					</header>
 
 				<div id="main">
 
 					<section class="post">
-
+						<!-- 즐겨찾기 -->
+						<?php
+							if(isset($_SESSION['user_id'])){
+								$db = new PDO("mysql:dbname=ericacafe; host=localhost; port=3306", "root", "a12345");
+								$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+		
+								$rows = $db->query("SELECT * FROM user_favorite");
+								$result = $rows->fetchAll();
+		
+								$flag = 0;
+		
+								for($i = 0; $i<count($result); $i++){
+									if($result[$i]["id"] == $_SESSION['user_id'] and $result[$i]["cafe"] == "cafe_7"){
+										$flag = 1;
+										echo "<form action=\"../delFav.php\" method=\"post\">
+													<button type='submit' name='del' id='del' value='cafe_7'>Delete Bookmark</button>
+											  </form>";
+									break;
+									}
+								}
+								if($flag != 1){
+									echo "<form action=\"../addFav.php\" method=\"post\">
+												<button type='submit' name='add' id='add' value='cafe_7'>Add Bookmark</button>
+										  </form>";
+								}
+							}
+						?>	
 					  	<header class="major">
 					  		<h1>쥬씨</h1>
 					  		<h3>juicy</h3>
