@@ -50,7 +50,7 @@
                   <!-- Post -->
                      <section class="post">
                         <header class="major">
-                           <h2>Sign In</h2>
+                           <h2>Sign Up</h2>
                         </header>
                         
                      </section>
