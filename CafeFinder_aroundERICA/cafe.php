@@ -49,7 +49,7 @@
 
       <!-- Header -->
       <header id="header">
-		<a class="logo">CAFE FINDER</a>
+	  	<a href="index.php" class="logo">Cafe Finder</a>
       </header>
 
       <!-- Nav -->
