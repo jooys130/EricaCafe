@@ -38,7 +38,91 @@
                         </header>
                      </section>
                      <section>
-                        List
+                        <?php
+                           if(!isset($_SESSION['user_id'])){
+                              echo "<center><h2> Please sign in to view your bookmark </h2></center></br>";
+                              echo '<center><a href="login.html" class="button big">SIGN IN</a></center>';
+                           }else{
+                              $db = new PDO("mysql:dbname=ericacafe; host=localhost; port=3306", "root", "a12345");
+                              $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+                              
+                              $userId = $_SESSION['user_id'];
+                              $q_userId = $db -> quote($userId);
+
+                              $rows = $db->query("SELECT * FROM user_favorite WHERE id = $q_userId");
+                              $result = $rows->fetchAll();
+
+                              for($i = 0; $i<count($result); $i++){
+                                 echo '</br>';
+                                 switch($result[$i]["cafe"]){
+                                    case "cafe_0" :
+                                       echo '<center> <a href="cafe_list/cafe_0.php" class="button big">스타벅스</a> </center>'; break;
+
+                                    case "cafe_1" :
+                                       echo '<center> <a href="cafe_list/cafe_1.php" class="button big">워터킹커피로스터스</a> </center>'; break;
+
+                                    case "cafe_2" :
+                                       echo '<center> <a href="cafe_list/cafe_2.php" class="button big">토프레소</a> </center>'; break;
+
+                                    case "cafe_3" :
+                                       echo '<center> <a href="cafe_list/cafe_3.php" class="button big">시저커피</a> </center>'; break;
+
+                                    case "cafe_4" :
+                                       echo '<center> <a href="cafe_list/cafe_4.php" class="button big">아마스빈</a> </center>'; break;
+
+                                    case "cafe_5" :
+                                       echo '<center> <a href="cafe_list/cafe_5.php" class="button big">카페윈드밀</a> </center>'; break;
+
+                                    case "cafe_6" :
+                                       echo '<center> <a href="cafe_list/cafe_6.php" class="button big">모모커피</a> </center>'; break;
+
+                                    case "cafe_7" :
+                                       echo '<center> <a href="cafe_list/cafe_7.php" class="button big">쥬씨</a> </center>'; break;
+
+                                    case "cafe_8" :
+                                       echo '<center> <a href="cafe_list/cafe_8.php" class="button big">요거프레소</a> </center>'; break;
+
+                                    case "cafe_9" :
+                                       echo '<center> <a href="cafe_list/cafe_9.php" class="button big">카페마루</a> </center>'; break;
+
+                                    case "cafe_10" :
+                                       echo '<center> <a href="cafe_list/cafe_10.php" class="button big">이디야커피</a> </center>'; break;
+
+                                    case "cafe_11" :
+                                       echo '<center> <a href="cafe_list/cafe_11.php" class="button big">카페누엘</a> </center>'; break;
+
+                                    case "cafe_12" :
+                                       echo '<center> <a href="cafe_list/cafe_12.php" class="button big">커피플렌트</a> </center>'; break;
+
+                                    case "cafe_13" :
+                                       echo '<center> <a href="cafe_list/cafe_13.php" class="button big">룽고커피</a> </center>'; break;
+
+                                    case "cafe_14" :
+                                       echo '<center> <a href="cafe_list/cafe_14.php" class="button big">우리동네커피공장카페</a> </center>'; break;
+
+                                    case "cafe_15" :
+                                       echo '<center> <a href="cafe_list/cafe_15.php" class="button big">타르트블라썸</a> </center>'; break;
+
+                                    case "cafe_16" :
+                                       echo '<center> <a href="cafe_list/cafe_16.php" class="button big">카페내향적</a> </center>'; break;
+
+                                    case "cafe_17" :
+                                       echo '<center> <a href="cafe_list/cafe_17.php" class="button big">크레바스</a> </center>'; break;
+
+                                    case "cafe_18" :
+                                       echo '<center> <a href="cafe_list/cafe_18.php" class="button big">투썸플레이스</a> </center>'; break;
+
+                                    case "cafe_19" :
+                                       echo '<center> <a href="cafe_list/cafe_19.php" class="button big">카페카르와</a> </center>'; break;
+
+                                    case "cafe_20" :
+                                       echo '<center> <a href="cafe_list/cafe_20.php" class="button big">카페드림</a> </center>'; break;
+                                       
+                                 }
+                              }
+                           }
+
+                        ?>
                     </section>
                </div>
 

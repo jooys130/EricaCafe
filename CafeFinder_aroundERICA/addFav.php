@@ -14,5 +14,5 @@
     $db->exec($str);
 
     header("Location: cafe_list/".$cafeName.".php");
-
+    exit;
 ?>
