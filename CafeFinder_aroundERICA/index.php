@@ -55,27 +55,27 @@
 				<!-- Nav -->
 					<nav id="nav">
 						<ul class="links">
-							<li class="active"><a href="cafe.php">CAFE</a></li>
+							<li><a href="cafe.php">CAFE</a></li>
 							<li><a href="intro.html">INTRODUCE</a></li>
 				                	<li><a href="bookmark.php">BOOKMARK</a></li>
 
                                         	</ul>
 					</nav>
 
-				<!-- Main -->
-				<div id="main">
 
-					<!-- Post -->
-					   <section class="post">
-						  <header class="major">
-							 <h1>This is a<br />
-							 Cafe Page</h1>
-							 <h3>around ERICA</h3>
-							 <p>성준은유연하조</p>
-						  </header>
 
-					   </section>
-				 </div>
+
+
+
+
+
+
+
+
+
+
+
+
 
 			  <!-- Copyright -->
 				 <div id="copyright">
