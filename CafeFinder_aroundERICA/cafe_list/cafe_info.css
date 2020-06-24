@@ -18,18 +18,18 @@ body{
 
 .basic_info img {
 	vertical-align: middle;
-	margin-right: 3px; 
+	margin-right: 3px;
 }
 
 .basic_info p {
-	font-family: 'Jua', sans-serif;
+	font-family: "Jua", sans-serif;
 	font-size: 18px;
 	margin-bottom: 5px;
 	margin-left: 30px;
 }
 
 .basic_info strong {
-	font-family: 'Jua', sans-serif;
+	font-family: "Jua", sans-serif;
 	font-size: 25px;
 	vertical-align: middle;
 }
@@ -42,7 +42,7 @@ body{
 }
 
 .menu_info strong {
-	font-family: 'Jua', sans-serif;
+	font-family: "Jua", sans-serif;
 	font-size: 18px;
 	vertical-align: middle;
 }
@@ -57,13 +57,3 @@ li {
 	overflow: hidden;
 	margin-right: 30px;
 }
-
-
-
-
-
-
-
-
-
-
