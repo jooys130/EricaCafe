@@ -82,8 +82,6 @@
 			    mapOption = { 
 			        center: new kakao.maps.LatLng(37.298574, 126.836560), // 지도의 중심좌표
 			        level: 4
-			        // center: new kakao.maps.LatLng(37.300701, 126.839197), // 지도의 중심좌표
-			        // level: 2
 			    };
 
 				var map = new kakao.maps.Map(mapContainer, mapOption); // 지도 생성
