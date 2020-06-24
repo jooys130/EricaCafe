@@ -309,7 +309,7 @@
 		  	</script>
 
 
-			<div class="searchbox">
+			<div class="searchBox">
 		    	<div class="header">
 		        <h1>Search</h1>
 		        <input onkeyup="filter()" type="text" id="value" placeholder="Type to Search">
