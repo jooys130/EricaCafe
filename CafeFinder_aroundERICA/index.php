@@ -16,9 +16,8 @@
 
 				<!-- Intro -->
 					<div id="intro">
-                        
 						<nav class="navbar navbar-inverse navbar-fixed-top">
-                            <ul class="actions small">
+                            				<ul class="actions small">
 
 								<!-- Alert Sign Up / Login, Logout Button -->
 								<?php
@@ -39,7 +38,7 @@
                                 }?>
 								<!-- php End -->
 							</ul>	
-                        </nav>
+                        			</nav>
                                       
 						<h1>Cafe Finder<br/>
 						around ERICA</h1>
@@ -60,21 +59,6 @@
 
                                         	</ul>
 					</nav>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 			  <!-- Copyright -->
 				 <div id="copyright">
