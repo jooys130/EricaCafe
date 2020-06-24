@@ -1,3 +1,4 @@
+<!-- Add Bookmark Function -->
 <?php
     session_start();
 

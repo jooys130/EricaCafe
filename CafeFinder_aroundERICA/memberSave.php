@@ -1,6 +1,8 @@
+<!-- Save Member to DB -->
 <?php
+    session_start();
+
     try {
-        session_start();
         $db = new PDO("mysql:dbname=ericacafe; host=localhost; port=3306", "root", "a12345");
         $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 

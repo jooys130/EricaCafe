@@ -1,4 +1,6 @@
 <!DOCTYPE HTML>
+<?php session_start(); ?>
+
 <html>
    <head>
       <title>SignUp</title>
@@ -8,10 +10,8 @@
       <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
    </head>
    <body class="is-loading"></body>
-      <!-- php -->
+        <!-- Sign Up Error Message -->
         <?php
-            session_start();
-
             if (isset($_SESSION['idError'])) {
                 if($_SESSION['idError'] == "error"){
                     $_SESSION['idError'] = "noError";
@@ -27,6 +27,7 @@
             }
             session_destroy();
         ?>
+         <!-- php End -->
 
       <!-- Wrapper -->
          <div id="wrapper">

@@ -1,5 +1,4 @@
 <!DOCTYPE HTML>
-
 <?php session_start(); ?>
 
 <html>
@@ -21,7 +20,7 @@
 						<nav class="navbar navbar-inverse navbar-fixed-top">
                             <ul class="actions small">
 
-                                <!-- php -->
+								<!-- Alert Sign Up / Login, Logout Button -->
 								<?php
 								if($_SESSION['signUpOk'] == "yes"){
 									$_SESSION['signUpOk'] = "no";
@@ -38,7 +37,7 @@
                                     echo "<p><strong>$user_name</strong>님 환영합니다.";
                                     echo '<li><a href="logOut.php" class="button special small">LOGOUT</a></li>';
                                 }?>
-                    
+								<!-- php End -->
 							</ul>	
                         </nav>
                                       

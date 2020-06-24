@@ -1,3 +1,4 @@
+<!-- Delete Bookmark Function -->
 <?php
     session_start();
 
