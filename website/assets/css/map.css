@@ -1,0 +1,16 @@
+@import url(//fonts.googleapis.com/earlyaccess/hanna.css);
+
+#map {
+	width: 100%;
+	height: 700px;
+}
+
+.title {
+	font-family: Hanna, sans-serif;
+	color: #1e252c;
+	font-size: 14px;
+	font-weight: bold;
+	width: 150px;
+	text-align: center;
+	padding: 6px 0;
+}

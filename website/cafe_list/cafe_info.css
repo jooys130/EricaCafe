@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+
+body{
+	overflow: auto;
+	display: block;
+	height: 100%;
+}
+
+.basic_info {
+	padding-top: 40px;
+	border-top: 2px solid #241d1e;
+	overflow: hidden;
+}
+
+.basic_info div {
+	margin-top: 30px;
+}
+
+.basic_info img {
+	vertical-align: middle;
+	margin-right: 3px;
+}
+
+.basic_info p {
+	font-family: "Jua", sans-serif;
+	font-size: 18px;
+	margin-bottom: 5px;
+	margin-left: 30px;
+}
+
+.basic_info strong {
+	font-family: "Jua", sans-serif;
+	font-size: 25px;
+	vertical-align: middle;
+}
+
+.menu_info {
+	padding-top: 40px;
+	margin-top: 40px;
+	border-top: 2px solid #241d1e;
+	overflow: hidden;
+}
+
+.menu_info strong {
+	font-family: "Jua", sans-serif;
+	font-size: 18px;
+	vertical-align: middle;
+}
+
+li {
+	list-style: none;
+	margin-top: 10px;
+}
+
+.price {
+	float: right;
+	overflow: hidden;
+	margin-right: 30px;
+}
