@@ -9,6 +9,7 @@
       <link rel="stylesheet" href="assets/css/main.css" />
       <link rel="stylesheet" href="assets/css/map.css" />
       <link rel="stylesheet" href="assets/css/search.css" />
+      <link rel="shortcut icon" type="image/png" href="favicon.png" />
       <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
    </head>
    <body class="is-loading">
