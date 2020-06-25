@@ -40,7 +40,7 @@
             <!-- Nav -->
                <nav id="nav">
                   <ul class="links">
-                     <li><a href="cafe.html">CAFE</a></li>
+                     <li><a href="cafe.php">CAFE</a></li>
                      <li><a href="intro.html">Introduce</a></li>
                      <li><a href="bookmark.php">BOOKMARK</a></li>
                   </ul>
